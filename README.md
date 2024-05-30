@@ -13,6 +13,7 @@ To use the `ShipController` class, follow these steps:
    ```html
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
+
 # Create a ship model (e.g., a cube) and add it to the scene.
 
 ## Create an instance of the ShipController class and pass the ship model, scene, and camera as parameters:
