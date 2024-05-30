@@ -12,23 +12,24 @@ To use the `ShipController` class, follow these steps:
 
    ```html
    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   ```
+
+2. Create a ship model (e.g., a cube) and add it to the scene.
+
+3. Create an instance of the ShipController class and pass the ship model, scene, and camera as parameters:
+   ```javascript
+    const shipController = new ShipController(ship, scene, camera);
+    ```
 
 
-# Create a ship model (e.g., a cube) and add it to the scene.
 
-## Create an instance of the ShipController class and pass the ship model, scene, and camera as parameters:
+## Controlling the Ship
+The ShipController class allows you to control the ship's movement and rotation using the following methods:
 
-```javascript
-const shipController = new ShipController(ship, scene, camera);
-```
-
-# Controlling the Ship
-## The ShipController class allows you to control the ship's movement and rotation using the following methods:
-
-`moveForward()`: Moves the ship forward along its local z-axis.
-`moveBackward()`: Moves the ship backward along its local z-axis.
-`rotateLeft()`: Rotates the ship to the left.
-`rotateRight()`: Rotates the ship to the right.
+`moveForward()`: Moves the ship forward along its local z-axis.,<br>
+`moveBackward()`: Moves the ship backward along its local z-axis.<br>
+`rotateLeft()`: Rotates the ship to the left.<br>
+`rotateRight()`: Rotates the ship to the right.<br>
 These methods can be called directly or mapped to keyboard inputs for user interaction.
 
 ## Updating the Ship's State
